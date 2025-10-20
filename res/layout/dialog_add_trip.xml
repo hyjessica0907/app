@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="新增行程項目"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="地點 (e.g., 台北101)"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="日期 (e.g., 2025-06-10)"
+        android:focusable="false"
+        android:clickable="true"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/etTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="時間 (e.g., 14:30)"
+        android:focusable="false"
+        android:clickable="true"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/etActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="活動內容 (e.g., 參觀觀景台)"
+        android:inputType="textMultiLine"
+        android:maxLines="3" />
+
+    <EditText
+        android:id="@+id/etMapLink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Google 地圖連結 (選填)"
+        android:inputType="textUri" />
+
+    <EditText
+        android:id="@+id/etNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="備註 (選填)"
+        android:inputType="textMultiLine"
+        android:maxLines="3" />
+
+</LinearLayout>
